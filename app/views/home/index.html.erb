@@ -94,26 +94,57 @@
 <!-- === SLide 3 - Portfolio -->
 <div class="slide story" id="slide-3" data-slide="3">
 	<div class="row">
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="/assets/DSC_0049.jpg" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
-		<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href=""><img class="thumb" src="" alt=""></a></div>
+		<div id="myCarousel" class="carousel slide" style="margin-left:10px;">
+		    <div class="carousel-inner">
+			    <div class="item active">
+			        <img src="assets/DSC_0046.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0124.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0165.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0192.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_1996.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0201.jpg" alt="" style="height: 600px; width: 450px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0166.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0322.jpg" alt="" style="height: 600px; width: 1000px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0602.jpg" alt="" style="height: 600px; width: 1200px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0135.jpg" alt="" style="height: 600px; width: 450px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSC_0333.jpg" alt="" style="height: 600px; width: 450px;">
+			    </div>
+			    <div class="item">
+			        <img src="assets/DSCF0271.jpg" alt="" style="height: 600px; width: 450px;">
+			    </div>
+		    </div>
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  </div>
 	</div><!-- /row -->
 </div><!-- /slide3 -->
 
 <!-- === Slide 6 / Contact === -->
-<div class="slide story" id="slide-6" data-slide="6" style="padding-bottom: 0px;">
+<div class="slide story" id="slide-6" data-slide="6" style="padding-bottom: 0px;margin-top: -60px;">
 	<div class="container">
 		<div class="row title-row">
-			<div class="col-12 font-light">Leave me a <span class="font-semibold">message</span></div>
+			<img src="/assets/DSC_1814.jpg" style="height:200px; width:200px;">
+			<div class="col-12 font-light">You can leave me a <span class="font-semibold">message</span></div>
 		</div><!-- /row -->
 		<div class="row line-row">
 			<div class="hr">&nbsp;</div>
@@ -134,7 +165,7 @@
 			</div><!-- /col12 -->
 			<div class="col-12 col-sm-2 with-hover-text">
 				<p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
-				<span class="hover-text font-light ">facebook/sabari</span></a>
+				<span class="hover-text font-light ">facebook/sabz.cam</span></a>
 			</div><!-- /col12 -->
 			<div class="col-12 col-sm-2 with-hover-text">
 				<p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
@@ -156,7 +187,9 @@
 					locked: false
 				}
 			}
-		});
-	
+		});	
 	});
-	</script>
+	$(function () {
+	   $('#myCarousel').carousel({ interval: 2000 })
+	});
+</script>
